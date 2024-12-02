@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Borrowing System</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!-- Logo and System Name -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="logo.png" alt="Logo" style="width: 50px; height: 50px; margin-right: 10px; border-radius: 50%;">
+                <span>Borrowing System</span>
+            </a>
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Centered Menu Items -->
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resources">Resources</a>
+                    </li>
+                </ul>
+                <!-- Search Bar and Login Button -->
+                <form class="d-flex me-3">
+                    <input class="form-control me-2" type="search" placeholder="Search Books">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <a href="login.html" class="btn btn-outline-success">Login</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Image Slider -->
+    <div id="carouselExample" class="carousel slide mt-3" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active position-relative">
+                <img src="library.jpg" class="d-block w-100" alt="Library">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 hover-caption">
+                    <h5>Welcome to the Library</h5>
+                    <p>Discover a world of knowledge and stories.</p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="bookshelf.jpg" class="d-block w-100" alt="Bookshelf">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 hover-caption">
+                    <h5>Explore Our Collections</h5>
+                    <p>Find books that inspire and educate.</p>
+                </div>
+            </div>
+            <div class="carousel-item position-relative">
+                <img src="reading.jpg" class="d-block w-100" alt="Reading Area">
+                <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded p-2 hover-caption">
+                    <h5>Cozy Reading Spaces</h5>
+                    <p>Relax and enjoy your favorite books in comfort.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+    <hr>
+
+    <!-- Image Gallery -->
+    <section id="gallery" class="py-5" style="background-color: #2a5934;">
+        <div class="container">
+            <h2 class="text-light">Book Gallery</h2>
+            <div class="row g-3 gallery">
+                <div class="col-md-4">
+                    <img src="book2.png" class="img-fluid" alt="Book 1">
+                </div>
+                <div class="col-md-4">
+                    <img src="book2.png" class="img-fluid" alt="Book 2">
+                </div>
+                <div class="col-md-4">
+                    <img src="book2.png" class="img-fluid" alt="Book 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    
+    <!-- Videos and Map -->
+    <section id="resources" class="py-5 bg-light">
+        <div class="container">
+            <h2>Learn and Locate</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <h5>Explore Library Features</h5>
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZNSA0NrDeb4" frameborder="0" allowfullscreen></iframe>
+                </div>                
+                <div class="col-md-6">
+                    <h5>Visit Us</h5>
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3945.954757336928!2d124.63885007477415!3d8.5037739915381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32fff3a3721a2dad%3A0x8c4ca25a7cc0802d!2sFairlane%20Village!5e0!3m2!1sen!2sph!4v1732616581317!5m2!1sen!2sph" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Left Side: Location and Contact -->
+                <div class="col-md-6 text-md-start text-center">
+                    <h5>Contact Us</h5>
+                    <p><strong>Location:</strong> 357 Fairlane Village, Cagayan de Oro, Misamis Oriental</p>
+                    <p><strong>Email:</strong> <a href="mailto:contact@booklibrary.com" class="text-light">contact@booklibrary.com</a></p>
+                </div>
+                <!-- Right Side: Social Media and About -->
+                <div class="col-md-6 text-md-end text-center">
+                    <h5>Follow Us</h5>
+                    <a href="#" class="me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                    <a href="#" class="me-3"><i class="fab fa-instagram fa-lg"></i></a>
+                    <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll-to-Top Arrow -->
+    <a href="#" id="scrollToTop" class="btn btn-success" style="display: none;">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show/hide the scroll-to-top button
+        const scrollToTopButton = document.getElementById('scrollToTop');
+    
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 200) {
+                scrollToTopButton.style.display = 'block';
+            } else {
+                scrollToTopButton.style.display = 'none';
+            }
+        });
+    
+        // Scroll to the top when the button is clicked
+        scrollToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+
+</html>
